@@ -1,0 +1,53 @@
+<h1>Properties#index</h1>
+<p>Find me in app/views/properties/index.html.erb</p>
+
+
+<table id="512-properties">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Available</th>
+      <th>Bedrooms</th>
+      <th>Bathrooms</th>
+      <th>Rent</th>
+      <th>Price per Bedroom</th>
+      <th>Area</th>
+      <th>Laundry</th>
+      <th>Description</th>
+      <th>Manager</th>
+      <th>Paid Utilities</th>
+      <th>Phone</th>
+      <th>Email</th>
+      <th>Bonus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @properties.each do |prop| %>
+      <tr>
+        <td><%= prop.name %></td>
+        <td><%= prop.address %></td>
+        <td><%= prop.available %></td>
+        <td><%= prop.bedrooms %></td>
+        <td><%= prop.bathrooms %></td>
+        <td><%= prop.rent %></td>
+        <td><%= prop.price_per_bedroom %></td>
+        <td><%= prop.area %></td>
+        <td><%= prop.laundry %></td>
+        <td><%= prop.description %></td>
+        <td><%= prop.manager %></td>
+        <td><%= prop.paid_utilities %></td>
+        <td><%= prop.phone %></td>
+        <td><%= prop.email %></td>
+        <td><%= prop.bonus %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<h2>Import Property</h2>
+
+<%= form_tag import_properties_path, multipart: true do %>
+  <%= file_field_tag :file %><br>
+  <%= submit_tag "Import" %>
+<% end %>

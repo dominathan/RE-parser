@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  address: MyString
+  available: 2015-01-27
+  bedrooms: 1
+  bathrooms: 1
+  rent: 1.5
+  price_per_bedroom: 1
+  area: MyString
+  laundry: MyString
+  description: MyText
+  manager: MyString
+  paid_utilities: MyString
+  phone: MyString
+  email: MyString
+  bonus: MyString
+
+two:
+  name: MyString
+  address: MyString
+  available: 2015-01-27
+  bedrooms: 1
+  bathrooms: 1
+  rent: 1.5
+  price_per_bedroom: 1
+  area: MyString
+  laundry: MyString
+  description: MyText
+  manager: MyString
+  paid_utilities: MyString
+  phone: MyString
+  email: MyString
+  bonus: MyString

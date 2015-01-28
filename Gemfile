@@ -36,15 +36,16 @@ group :development, :test do
 
   gem 'web-console', '~> 2.0'
 
-  gem 'spring'
+  #gem 'spring'
   #gem 'pry' #debugging
   #gem 'jazz_hands' #easy railsconsole viewing
   gem 'hirb' #easy railsconsole viewing
   gem 'quiet_assets' #removes all that logger shit about assets
 end
 
-  gem 'thin' #local server
-
+gem 'thin' #local server
+gem 'roo'
+gem 'iconv'
 
 group :production do
   gem 'rails_12factor'
